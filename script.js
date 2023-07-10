@@ -1,14 +1,10 @@
 window.addEventListener('scroll', function () {
   var scrollPoints = [
-    { scroll: 0, bgColor: '#ffffff', textColor: '#000000' },
-    { scroll: 600, bgColor: '#0a2a91', textColor: '#f7f5f0' },
-    { scroll: 800, bgColor: '#003334', textColor: '#004567' },
-    { scroll: 1000, bgColor: '#534536', textColor: '#346699' },
-    { scroll: 1200, bgColor: '#FFFF00', textColor: '#000000' },
-    { scroll: 1400, bgColor: '#FF00FF', textColor: '#000000' },
-    { scroll: 1600, bgColor: '#00FFFF', textColor: '#000000' },
-    { scroll: 1800, bgColor: '#FF0000', textColor: '#ffffff' }
-    // Agrega más puntos de desplazamiento y colores según sea necesario
+    { scroll: 0, bgColor: '#B8B8FF', textColor: '#4F240D' },
+    { scroll: 600, bgColor: '#1B3644', textColor: '#FFA6D9' },
+    { scroll: 1400, bgColor: '#7D342A', textColor: '#E7E8D1' },
+    { scroll: 2300, bgColor: '#DCC5EB', textColor: '#64131A' },
+    { scroll: 3000, bgColor: '#B8B8FF', textColor: '#4F240D' }
   ];
 
   var body = document.body;
@@ -33,12 +29,17 @@ window.addEventListener('scroll', function () {
       navLinks[i].style.color = currentPoint.textColor;
     }
   } else {
-    body.style.backgroundColor = 'transparent';
-    body.style.color = '#000000';
+    body.style.backgroundColor = '#B8B8FF';
+    body.style.color = '#4F240D';
     for (var i = 0; i < navLinks.length; i++) {
-      navLinks[i].style.color = '#000000';
+      navLinks[i].style.color = '#4F240D';
     }
   }
 
   navbar.style.backgroundColor = 'transparent';
 });
+
+
+// video
+const video = document.querySelector('video');
+video.controls = false;
