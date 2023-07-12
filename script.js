@@ -1,10 +1,10 @@
 window.addEventListener('scroll', function () {
   var scrollPoints = [
-    { scroll: 0, bgColor: '#B8B8FF', textColor: '#4F240D' },
+    { scroll: 0, bgColor: '#B8B8FF', textColor: '#3434B0' },
     { scroll: 600, bgColor: '#1B3644', textColor: '#FFA6D9' },
     { scroll: 1400, bgColor: '#7D342A', textColor: '#E7E8D1' },
-    { scroll: 2300, bgColor: '#DCC5EB', textColor: '#64131A' },
-    { scroll: 3000, bgColor: '#B8B8FF', textColor: '#4F240D' }
+    { scroll: 2500, bgColor: '#DCC5EB', textColor: '#64131A' },
+    { scroll: 3200, bgColor: '#B8B8FF', textColor: '#3434B0' }
   ];
 
   var body = document.body;
@@ -30,9 +30,9 @@ window.addEventListener('scroll', function () {
     }
   } else {
     body.style.backgroundColor = '#B8B8FF';
-    body.style.color = '#4F240D';
+    body.style.color = '#3434B0';
     for (var i = 0; i < navLinks.length; i++) {
-      navLinks[i].style.color = '#4F240D';
+      navLinks[i].style.color = '#3434B0';
     }
   }
 
@@ -43,3 +43,4 @@ window.addEventListener('scroll', function () {
 // video
 const video = document.querySelector('video');
 video.controls = false;
+
